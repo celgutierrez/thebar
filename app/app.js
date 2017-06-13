@@ -24,9 +24,9 @@ app.config([
                 url: '/about',
                 templateUrl: 'views/about.html',
             })
-            .state('press', {
-                url: '/press',
-                templateUrl: 'views/press.html',
+            .state('layout', {
+                url: '/layout',
+                templateUrl: 'views/layout.html',
             })
             .state('events', {
                 url: '/events',
