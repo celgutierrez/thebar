@@ -37,9 +37,9 @@ li {
     margin-right: 1.5em;
 }
 
-a {
-    text-decoration: none;
+ul a {
     color: white;
+    text-decoration: none;
 }
 
 .nav {
@@ -56,10 +56,6 @@ a {
     margin: 0;
 }
 
-nav.a {
-    color: white;
-}
-
 .gallery {
     height: 30em;
     width: 30em;
@@ -67,7 +63,7 @@ nav.a {
     margin-left: 20em;
 }
 
-a.gallery:hover {
+img a:hover {
     background-color: rgba(255, 255, 255, .3);
 }
 
