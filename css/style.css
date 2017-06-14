@@ -60,8 +60,24 @@ nav.a {
     color: white;
 }
 
+.gallery {
+    height: 30em;
+    width: 30em;
+    overflow: hidden;
+    margin-left: 20em;
+}
+
+a.gallery:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
 
 /* Quick Alignment */
+
+.img-shrink {
+    max-width: 100%;
+    height: auto;
+}
 
 .right {
     float: right;
@@ -120,7 +136,6 @@ nav.a {
 .row {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
 }
 
 .row:after {
@@ -132,7 +147,6 @@ nav.a {
 .row .col {
     float: left;
     box-sizing: border-box;
-    padding: 0 0.75rem;
     min-height: 1px;
 }
 

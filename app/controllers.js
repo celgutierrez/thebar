@@ -1,1 +1,1 @@
-angular.module('BarCtrls', ['BarServices']);
+angular.module('BarCtrls', ['BarServices'])
