@@ -50,10 +50,6 @@ a:hover {
     margin: 0;
 }
 
-.gallery img:hover {
-    background-color: rgba(255, 255, 255, .3);
-}
-
 
 /* Quick Alignment */
 
@@ -160,6 +156,14 @@ a:hover {
 
 .ev-pad {
     margin: .5em;
+    justify-content: center;
+}
+
+
+/* Gallery */
+
+.gallery-pic:hover {
+    background-color: rgba(255, 255, 255, .4);
 }
 
 
