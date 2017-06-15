@@ -1,4 +1,4 @@
-var app = angular.module('Bar', ['ui.router', 'BarCtrls']);
+var app = angular.module('Bar', ['BarCtrls', 'ui.router', 'ngAnimate', 'ngTouch', 'ui.bootstrap']);
 
 app.config([
     '$stateProvider',
@@ -10,27 +10,31 @@ app.config([
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'views/home.html',
+                templateUrl: 'views/home.html'
             })
             .state('gallery', {
                 url: '/gallery',
-                templateUrl: 'views/gallery.html',
+                templateUrl: 'views/gallery.html'
             })
             .state('contact', {
                 url: '/contact',
-                templateUrl: 'views/contact.html',
+                templateUrl: 'views/contact.html'
             })
             .state('about', {
                 url: '/about',
-                templateUrl: 'views/about.html',
+                templateUrl: 'views/about.html'
             })
             .state('layout', {
                 url: '/layout',
-                templateUrl: 'views/layout.html',
+                templateUrl: 'views/layout.html'
             })
             .state('events', {
                 url: '/events',
-                templateUrl: 'views/events.html',
+                templateUrl: 'views/events.html'
+            })
+            .state('testpage', {
+                url: '/test',
+                templateUrl: 'views/testpage.html'
             })
             .state('404', {
                 url: '/404',
