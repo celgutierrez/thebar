@@ -1,13 +1,18 @@
 /* Primary */
 
-html {
+#bs-override {
+    margin: 0;
+    color: white;
     background: url(../img/pubhome.jpg) no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
 
-body {
-    margin: 0;
+#bs-override a:active,
+#bs-override a:visited,
+#bs-override a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 ul li {
@@ -24,6 +29,11 @@ li {
 ul a {
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 .navi {
@@ -91,8 +101,8 @@ ul a {
 }
 
 .vert-home {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 5em;
+    margin-bottom: 3em;
 }
 
 
@@ -107,7 +117,7 @@ ul a {
 }
 
 #event-box {
-    height: 15em;
+    height: 23em;
     margin-top: 2em;
     padding: 2em;
     overflow: hidden;
@@ -119,6 +129,7 @@ ul a {
     background: url(../img/pubabout.jpg)no-repeat center center fixed;
     background-position: cover;
     filter: grayscale(100%);
+    padding: 2em;
 }
 
 .logo {
@@ -152,21 +163,6 @@ ul a {
 }
 
 
-/* Carousel (hopefully) */
-
-#slides_control > div {
-    height: 200px;
-}
-
-#slides_control {
-    position: absolute;
-    width: 400px;
-    left: 50%;
-    top: 20px;
-    margin-left: -200px;
-}
-
-
 /* Flex Alignment */
 
 .contain-flex,
@@ -197,11 +193,6 @@ ul a {
 .flex-row {
     justify-content: center;
     align-content: center;
-}
-
-.link-ev {
-    text-align: right;
-    font-weight: 200;
 }
 
 .layout-img {

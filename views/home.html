@@ -12,23 +12,28 @@
         <div id="event-box">
             <div class="flex-row row-set">
                 <div class="col s6">
-                    <span class="ev-title">Upcoming Events</span>
+                    <span class="ev-title">Weekly Events</span>
                 </div>
                 <div class="col s6 link-align">
-                    <span class="ev-not-title">View All Events</span>
+                    <a href="/events"><span class="ev-not-title">View Event Calendar</span></a>
                 </div>
             </div>
             <div class="flex-row row-set event-slide-box">
-                <div class="col s3 ev-pad">
-                    <img class="img-fit" src="../img/pubabout.jpg">
+                <div class="col s12 ev-pad">
+                    <div ng-controller=SliderCtrl>
+                        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                            <div uib-slide ng-repeat="slide in slides" index="slide.id">
+                                <img ng-src="{{slide.image}}">
+                                <div class="carousel-caption">
+                                    <p>{{slide.text}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col s3 ev-pad">
-                    <img class="img-fit" src="../img/pubabout.jpg">
-                </div>
-                <div class="col s3 ev-pad">
-                    <img class="img-fit" src="../img/pubabout.jpg">
-                </div>
-                <div class="col s3 ev-pad"> </div>
             </div>
         </div>
     </div>
+</div>
+</div>
+</div>

@@ -1,15 +1,26 @@
 var app = angular.module('BarCtrls', ['BarServices']);
-console.log('loaded');
 app.controller('SliderCtrl', function($scope) {
-    console.log('in the carousel');
     $scope.myInterval = 3000;
+    $scope.noWrapSlides = false;
+    $scope.active = 0;
+    var currIndex = 0;
+
     $scope.slides = [{
-        image: 'http://lorempixel.com/400/200/'
+        image: 'http://lorempixel.com/400/200/',
+        id: currIndex++
     }, {
-        image: 'http://lorempixel.com/400/200/food'
+        image: 'http://lorempixel.com/400/200/food',
+        id: currIndex++
     }, {
-        image: 'http://lorempixel.com/400/200/sports'
+        image: 'http://lorempixel.com/400/200/sports',
+        id: currIndex++
+
     }, {
-        image: 'http://lorempixel.com/400/200/people'
+        image: 'http://lorempixel.com/400/200/people',
+        id: currIndex++
+
     }];
+
+
+
 });

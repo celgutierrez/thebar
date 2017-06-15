@@ -32,10 +32,6 @@ app.config([
                 url: '/events',
                 templateUrl: 'views/events.html'
             })
-            .state('testpage', {
-                url: '/test',
-                templateUrl: 'views/testpage.html'
-            })
             .state('404', {
                 url: '/404',
                 templateUrl: 'views/404.html'
