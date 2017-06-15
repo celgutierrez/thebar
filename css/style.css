@@ -101,6 +101,11 @@ a:hover {
     margin-bottom: 3em;
 }
 
+.vert-event {
+    margin-top: 8em;
+    margin-bottom: 5em;
+}
+
 
 /* Landing Page */
 
@@ -108,11 +113,11 @@ a:hover {
 .home-box {
     width: 100%;
     border: 0;
-    border-radius: 10px;
     margin: 0 auto;
 }
 
 #event-box {
+    border-radius: 0 0 10px 10px;
     height: 23em;
     margin-top: 2em;
     padding: 2em;
@@ -122,6 +127,7 @@ a:hover {
 
 .home-box {
     height: 10em;
+    border-radius: 10px 10px 0 0;
     background: url(../img/pubabout.jpg)no-repeat center center fixed;
     background-position: cover;
     filter: grayscale(100%);
@@ -157,6 +163,44 @@ a:hover {
 .ev-pad {
     margin: .5em;
     justify-content: center;
+}
+
+
+/* About */
+
+.about-box {
+    background-color: rgba(0, 0, 0, .5);
+    height: 20em;
+    padding: 7.5em;
+}
+
+
+/* Event Page */
+
+.event-page {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 2em;
+}
+
+.event-row {
+    padding: 1em;
+}
+
+.event-col {
+    padding: 3em .5em .5em .5em;
+}
+
+..button-row {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+
+/* Contact */
+
+.contact-box {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 2em;
 }
 
 
@@ -201,6 +245,7 @@ a:hover {
 
 .layout-img {
     align-self: center;
+    padding: 2em;
 }
 
 .contained .row-set {

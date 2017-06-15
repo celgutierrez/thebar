@@ -19,11 +19,11 @@
                 </div>
             </div>
             <div class="flex-row row-set event-slide-box">
-                <div class="col s6 ev-pad">
+                <div class="col s12 ev-pad">
                     <div ng-controller=SliderCtrl>
                         <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                             <div uib-slide ng-repeat="slide in slides" index="slide.id">
-                                <img ng-src="{{slide.image}}">
+                                <img class="img-fit" ng-src="{{slide.image}}">
                                 <div class="carousel-caption">
                                     <p>{{slide.text}}</p>
                                 </div>
