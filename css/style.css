@@ -3,9 +3,10 @@
 #bs-override {
     margin: 0;
     color: white;
-    background: url(../img/pubhome.jpg) no-repeat center center fixed;
+    background: url(../img/barbg.png) no-repeat center center fixed;
     background-size: cover;
     color: white;
+    font-family: 'Raleway', sans-serif;
 }
 
 #bs-override a:active,
@@ -15,15 +16,29 @@
     text-decoration: none;
 }
 
+li,
+button,
+.event-title,
+h3,
+h4 {
+    font-family: 'Alegreya Sans SC', serif !important;
+    font-weight: 800;
+}
+
 ul li {
     text-decoration: none;
     list-style: none;
+}
+
+ul li:hover {
+    background-color: rgba(0, 0, 0, .9);
 }
 
 li {
     display: inline-block;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    font-size: 17px;
 }
 
 ul a {
@@ -37,7 +52,7 @@ a:hover {
 }
 
 .navi {
-    background-color: grey;
+    background-color: rgba(0, 0, 0, .6);
     width: 100%;
     height: 56px;
     line-height: 56px;
@@ -48,6 +63,15 @@ a:hover {
 
 .navi ul {
     margin: 0;
+}
+
+.navi img .logo-img {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+    white-space: nowrap;
 }
 
 
@@ -87,12 +111,12 @@ a:hover {
     margin-top: 5em;
 }
 
-.vert-gallery,
 .vert-layout {
-    margin-top: 4em;
+    margin-top: 10em;
 }
 
 .vert-gallery {
+    margin-top: 4em;
     margin-bottom: 4em;
 }
 
@@ -113,12 +137,11 @@ a:hover {
 .home-box {
     width: 100%;
     border: 0;
-    margin: 0 auto;
 }
 
 #event-box {
-    border-radius: 0 0 10px 10px;
-    height: 23em;
+    margin: 0 auto;
+    height: auto;
     margin-top: 2em;
     padding: 2em;
     overflow: hidden;
@@ -127,28 +150,23 @@ a:hover {
 
 .home-box {
     height: 10em;
-    border-radius: 10px 10px 0 0;
     background: url(../img/pubabout.jpg)no-repeat center center fixed;
-    background-position: cover;
+    background-size: cover;
     filter: grayscale(100%);
-    padding: 2em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 600;
-    align-self: center;
+    margin-left: 7em;
+    margin-right: 5em;
 }
 
 .event-slide-box {
     width: 100%;
     height: auto;
     padding-top: 2em;
-}
-
-.ev-title {
-    font-weight: 600;
-    font-size: 16px;
 }
 
 .link-align {
@@ -191,6 +209,10 @@ a:hover {
 
 /* Event Page */
 
+.event-title {
+    font-size: 18px;
+}
+
 .event-page {
     background-color: rgba(0, 0, 0, .5);
     padding: 2em;
@@ -204,9 +226,19 @@ a:hover {
     padding: 3em .5em .5em .5em;
 }
 
-..button-row {
+.button-row {
     margin-left: 10em;
     margin-right: 10em;
+}
+
+button {
+    background-color: #184F84;
+    border: 0;
+    margin-top: 3em !important;
+    padding: .6em;
+    color: white;
+    font-weight: 600 !important;
+    font-size: 17px !important;
 }
 
 
@@ -233,15 +265,12 @@ a:hover {
     max-width: 100%;
 }
 
-.contain-flex {
-    width: 60%;
-}
-
 .contained {
     width: 90%;
 }
 
 .contain-flex {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
 }

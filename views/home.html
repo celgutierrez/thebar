@@ -1,33 +1,29 @@
 <div class="vert-home">
     <div class="contain-flex">
         <div class="home-box">
-            <div class="flex-row row-set">
+            <!--      <div class="flex-col row-set">
                 <div class="col s12">
-                    <div class="logo">
-                        Lambda&sup3;
-                    </div>
+                    <div class="logo"> -->
+            <img class="img-shrink" src="./img/lambda.png">
+            <!--  </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div id="event-box">
             <div class="flex-row row-set">
                 <div class="col s6">
-                    <span class="ev-title">Weekly Events</span>
+                    <span class="event-title">Weekly Events</span>
                 </div>
                 <div class="col s6 link-align">
                     <a href="/events"><span class="ev-not-title">View Event Calendar</span></a>
                 </div>
             </div>
-            <div class="flex-row row-set event-slide-box">
-                <div class="col s12 ev-pad">
-                    <div ng-controller=SliderCtrl>
-                        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                            <div uib-slide ng-repeat="slide in slides" index="slide.id">
-                                <img class="img-fit" ng-src="{{slide.image}}">
-                                <div class="carousel-caption">
-                                    <p>{{slide.text}}</p>
-                                </div>
-                            </div>
+            <div class="flex-row row-set event-slide-box" ng-controller=SliderCtrl>
+                <div class="col s12" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                    <div uib-slide ng-repeat="slide in slides" index="slide.id">
+                        <img class="img-fit" ng-src="{{slide.image}}">
+                        <div class="carousel-caption">
+                            <p>{{slide.text}}</p>
                         </div>
                     </div>
                 </div>
