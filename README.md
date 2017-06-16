@@ -15,6 +15,7 @@ Redesign of an existing website, Lambda Lounge is a hypothetical nightclub and t
 <li>AngularJs</li>
 <li>HTML</li>
 <li>CSS</li>
+<li>NodeJs/Express</li>
 </ul>
 <hr>
 <h3>Approach:</h3>
