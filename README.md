@@ -22,6 +22,8 @@ I did a lot of research into bar and nightclub websites and their overall layout
 </ul>
 
 <h5>Major Hurdles:</h5>
-*Nightclub websites are busy with a lot of content, and attempting to emulate that while making sure things made sense on the page was difficult.
-*The carousel took a couple of hours to get working because, even with the framework of Bootstrap, it was temperamental to get up and running.
+<ul>
+<li>Nightclub websites are busy with a lot of content, and attempting to emulate that while making sure things made sense on the page was difficult.</li>
+<li>The carousel took a couple of hours to get working because, even with the framework of Bootstrap, it was temperamental to get up and running.</li>
+</ul>
 </p>
