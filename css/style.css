@@ -25,13 +25,17 @@ h4 {
     font-weight: 800;
 }
 
+h5 {
+    font-weight: 600;
+}
+
 ul li {
     text-decoration: none;
     list-style: none;
 }
 
 ul li:hover {
-    background-color: rgba(0, 0, 0, .9);
+    background-color: #76C0CF;
 }
 
 li {
@@ -54,10 +58,12 @@ a:hover {
 .navi {
     background-color: rgba(0, 0, 0, .6);
     width: 100%;
+    position: fixed;
+    top: 0;
     height: 56px;
     line-height: 56px;
     text-align: center;
-    margin-top: 0;
+    z-index: 99;
     display: block;
 }
 
@@ -116,13 +122,13 @@ a:hover {
 }
 
 .vert-gallery {
-    margin-top: 4em;
+    margin-top: 7em;
     margin-bottom: 4em;
 }
 
 .vert-home {
     margin-top: 5em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .vert-event {
@@ -150,7 +156,7 @@ a:hover {
 
 .home-box {
     height: 10em;
-    background: url(../img/pubabout.jpg)no-repeat center center fixed;
+    background: url(../img/pubabout.jpg) no-repeat center center fixed;
     background-size: cover;
     filter: grayscale(100%);
     justify-content: center;
@@ -253,8 +259,11 @@ button {
 /* Gallery */
 
 .gallery-pic:hover {
-    background-color: rgba(255, 255, 255, .4);
+    filter: grayscale(100%) blur(20%);
 }
+
+
+/* Footer */
 
 
 /* Flex Alignment */
