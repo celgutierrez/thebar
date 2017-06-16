@@ -1,4 +1,4 @@
-<h1>Lamba Lounge (The Bar)</h1>
+<h1>Lambda Lounge (The Bar)</h1>
 <hr>
 <p>
 Redesign of an existing website, Lambda Lounge is a hypothetical nightclub and the overall concept was to learn to build websites that are unique and eye catching to garner more traffic.
