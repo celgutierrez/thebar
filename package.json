@@ -1,0 +1,24 @@
+{
+  "name": "thebar",
+  "version": "1.0.0",
+  "description": "<h1>Lambda Lounge (The Bar)</h1> <hr> <p> Redesign of an existing website, Lambda Lounge is a hypothetical nightclub and the overall concept was to learn to build websites that are unique and eye catching to garner more traffic.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celgutierrez/thebar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/celgutierrez/thebar/issues"
+  },
+  "homepage": "https://github.com/celgutierrez/thebar#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  }
+}
