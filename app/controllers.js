@@ -6,17 +6,17 @@ app.controller('SliderCtrl', function($scope) {
     var currIndex = 0;
 
     $scope.slides = [{
-        image: 'http://lorempixel.com/400/200/',
+        image: 'http://lorempixel.com/400/200/nightlife/1',
         id: currIndex++
     }, {
-        image: 'http://lorempixel.com/400/200/food',
+        image: 'http://lorempixel.com/400/200/nightlife/4',
         id: currIndex++
     }, {
-        image: 'http://lorempixel.com/400/200/sports',
+        image: 'http://lorempixel.com/400/200/nightlife/2',
         id: currIndex++
 
     }, {
-        image: 'http://lorempixel.com/400/200/people',
+        image: 'http://lorempixel.com/400/200/nightlife/3',
         id: currIndex++
 
     }];
