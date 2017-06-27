@@ -6,7 +6,7 @@ Redesign of an existing website, Lambda Lounge is a hypothetical nightclub and t
 
 <br>
 
-<img src="img/lambdascrn.png" alt="Lambda Lounge">
+<img src="public/img/lambdascrn.png" alt="Lambda Lounge">
 <hr>
 
 <h3>Technologies Used:</h3>
