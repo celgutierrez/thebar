@@ -21,6 +21,4 @@ app.controller('SliderCtrl', function($scope) {
 
     }];
 
-
-
 });
