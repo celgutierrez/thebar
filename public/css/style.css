@@ -56,7 +56,7 @@ a:hover {
 }
 
 .navi {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .8);
     width: 100%;
     position: fixed;
     top: 0;
@@ -64,12 +64,13 @@ a:hover {
     line-height: 56px;
     text-align: center;
     z-index: 99;
+    margin-top: 10em;
     display: block;
 }
 
-.navi ul {
+/* .navi ul {
     margin: 0;
-}
+} */
 
 .navi img .logo-img {
     position: absolute;
@@ -157,6 +158,7 @@ a:hover {
 .home-box {
     height: 10em;
     background: url(../img/pubabout.jpg) no-repeat center center fixed;
+    display: block;
     background-size: cover;
     filter: grayscale(100%);
     justify-content: center;
