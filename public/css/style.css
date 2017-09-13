@@ -29,6 +29,8 @@ h5 {
     font-weight: 600;
 }
 
+/* Navigation */
+
 ul li {
     text-decoration: none;
     list-style: none;
@@ -64,13 +66,9 @@ a:hover {
     line-height: 56px;
     text-align: center;
     z-index: 99;
-    margin-top: 10em;
+    margin-top: 10em; 
     display: block;
 }
-
-/* .navi ul {
-    margin: 0;
-} */
 
 .navi img .logo-img {
     position: absolute;
@@ -79,6 +77,71 @@ a:hover {
     font-size: 2.1rem;
     padding: 0;
     white-space: nowrap;
+}
+
+#nav {
+    /* container */
+}
+
+#nav > a {
+    display: none;
+}
+
+#nav li {
+    position: relative;
+}
+ 
+ 
+#nav > ul {
+    height: 3.75em;
+}
+
+#nav > ul > li {
+    width: 16.%;
+    height: 100%;
+    float: left;
+    background-color: rgba(0, 0, 0, .8);
+
+}
+
+@media only screen and (max-width: 40em) {
+    #nav {
+        position: relative;
+        margin-top: 0;
+    }
+
+    #nav > a {}
+    #nav:not( :target) > a:first-of-type, #nav:target > a:last-of-type {
+        display: block;
+    }
+
+    #nav > ul {
+        height: auto;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    #nav:target > ul {
+        display: block;
+    }
+
+    #nav > ul > li {
+        width: 100%;
+        float: none;
+    }
+
+    .home-box img {
+        margin-top: 2em;
+    }
+
+    #event-box {
+        width: 100%;
+        display: block;
+    }
+
+
 }
 
 
@@ -106,9 +169,9 @@ a:hover {
     margin-right: 1em;
 }
 
-.centered {
+ .centered {
     text-align: center;
-}
+} 
 
 .vert {
     margin-top: 10em;
@@ -164,11 +227,6 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-
-.logo {
-    margin-left: 7em;
-    margin-right: 5em;
 }
 
 .event-slide-box {
@@ -272,9 +330,6 @@ button {
 .gallery-pic img:hover {
     filter: grayscale(100%) !important;
 }
-
-
-/* Footer */
 
 
 /* Flex Alignment */
