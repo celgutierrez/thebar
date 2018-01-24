@@ -3,6 +3,7 @@
 <p>
 Redesign of an existing website, Lambda Lounge is a hypothetical nightclub and the overall concept was to learn to build websites that are unique and eye catching to garner more traffic.
 <br>Live website <a href="https://lambda-lounge.herokuapp.com">here</a>!
+<br>Slideshow with examples of the original website this project was designed from <a href="https://drive.google.com/open?id=1G_M7wHDWVonMl0r54Z1Ays6jN7Z1jqjz0iAR945nPB0">here</a>!
 
 <br>
 
@@ -31,7 +32,7 @@ I did a lot of research into bar and nightclub websites and their overall layout
 
 <h3>Major Hurdles:</h3>
 <ul>
-<li>Building a website almost entirely without a framework was difficult because I'd relied so heavily on pre-built frameworks for much of the course</li>
+<li>Building a website almost entirely without a library (such as Bootstrap or GOogle Material Design) was difficult because I'd relied so heavily on pre-built libraries for much of the course</li>
 <li>Nightclub websites are busy with a lot of content,
 and attempting to emulate that while making sure things made sense on the page was difficult.
 </li>
