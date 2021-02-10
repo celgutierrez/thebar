@@ -165,8 +165,24 @@ a:hover {
         margin-right: .5em;
     }
 
-    .event-container {
-        width: 100% !important;
+    div.event-container {
+        width: 100%;
+    }
+
+    div.contact-box {
+        margin: 15em .5em;
+    }
+
+    div.about-blurb {
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .info-socials {
+        margin-bottom: 2em;
     }
 }
 
@@ -213,14 +229,8 @@ a:hover {
     padding: 0 1em;
 }
 
-.vert-home {
-    margin-top: 5em;
-    margin-bottom: 1em;
-}
-
-.vert-event {
-    margin-top: 15em;
-    margin-bottom: 5em;
+div.vert-home {
+    margin: 15em;
 }
 
 
@@ -288,8 +298,8 @@ a:hover {
 
 /* Event Page */
 
-.event-container {
-    width: 50%;
+div.event-container {
+    margin: 15em;
 }
 
 .diplo {
@@ -334,8 +344,22 @@ button {
 .contact-box {
     background-color: rgba(0, 0, 0, .8);
     padding: 2em;
+    margin: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-blurb {
+    width: 50%;
 }
 
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: space-evenly;
+}
 
 /* Gallery */
 
