@@ -1,4 +1,8 @@
 /* Primary */
+html {
+    overflow-x: hidden;
+}
+
 
 #bs-override {
     margin: 0;
@@ -81,12 +85,12 @@ a:hover {
     white-space: nowrap;
 }
 
-#nav {
-    /* container */
-}
-
 #nav > a {
     display: none;
+}
+
+#nav a:hover {
+        color: #F4A700;
 }
 
 #nav li {
@@ -106,13 +110,28 @@ a:hover {
 
 }
 
+/* Header */
+
+.header-top {
+    height: 10em;
+    background: url(../img/pubabout.jpg) no-repeat center center fixed;
+    display: block;
+    background-size: cover;
+    filter: grayscale(100%);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+
 @media only screen and (max-width: 40em) {
-    #nav {
-        position: relative;
-        margin-top: 0;
+
+    #nav > a {
+        color: #FFF;
     }
 
-    #nav > a {}
     #nav:not( :target) > a:first-of-type, #nav:target > a:last-of-type {
         display: block;
     }
@@ -123,6 +142,8 @@ a:hover {
         position: absolute;
         left: 0;
         right: 0;
+        padding-left: 0;
+        margin-left: 0;
     }
 
     #nav:target > ul {
@@ -132,17 +153,21 @@ a:hover {
     #nav > ul > li {
         width: 100%;
         float: none;
+        margin-left: 0;
     }
 
     .home-box img {
         margin-top: 2em;
     }
 
-    #event-box {
-        
+    .event-page {
+        margin-left: .5em;
+        margin-right: .5em;
     }
 
-
+    .event-container {
+        width: 100% !important;
+    }
 }
 
 
@@ -178,17 +203,14 @@ a:hover {
     margin-top: 10em;
 }
 
-.vert-event {
-    margin-top: 5em;
-}
-
 .vert-layout {
     margin-top: 10em;
 }
 
 .vert-gallery {
-    margin-top: 7em;
+    margin-top: 15em;
     margin-bottom: 4em;
+    padding: 0 1em;
 }
 
 .vert-home {
@@ -197,7 +219,7 @@ a:hover {
 }
 
 .vert-event {
-    margin-top: 8em;
+    margin-top: 15em;
     margin-bottom: 5em;
 }
 
@@ -217,17 +239,6 @@ a:hover {
     padding: 2em;
     overflow: hidden;
     background-color: rgba(0, 0, 0, .7);
-}
-
-.home-box {
-    height: 10em;
-    background: url(../img/pubabout.jpg) no-repeat center center fixed;
-    display: block;
-    background-size: cover;
-    filter: grayscale(100%);
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 .event-slide-box {
@@ -276,6 +287,10 @@ a:hover {
 
 
 /* Event Page */
+
+.event-container {
+    width: 50%;
+}
 
 .diplo {
     background-color: rgba(255, 255, 255, .8);
@@ -346,7 +361,6 @@ button {
 }
 
 .contain-flex {
-    width: 60%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -380,6 +394,7 @@ button {
     .contained {
         width: 85%;
     }
+
 }
 
 @media only screen and (min-width: 993px) {
