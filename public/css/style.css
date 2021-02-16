@@ -224,6 +224,10 @@ a.home-cta:hover {
         margin-top: 10em;
     }
 
+    .home-container .site-logo {
+        display: none;
+    }
+
     .home-content {
         margin: 2em 0;
     }
