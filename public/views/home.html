@@ -1,26 +1,15 @@
-<div class="vert-home animated fadeIn">
-    <div class="contain-flex">
-        <div id="event-box">
-            <div class="flex-row row-set">
-                <div class="col s6">
-                    <span class="event-title">Weekly Events</span>
-                </div>
-                <div class="col s6 link-align">
-                    <a href="/events"><span class="ev-not-title">View Event Calendar</span></a>
-                </div>
+<div class="home">
+    <div class="home-container animated fadeInDown">
+        <div class="home-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="home-cta-section">
+            <div class="home-btn-container">
+                <a class="home-cta" href="/">Reserve</a>
             </div>
-            <div class="flex-row row-set event-slide-box" ng-controller=SliderCtrl>
-                <div class="col s12" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                    <div uib-slide ng-repeat="slide in slides" index="slide.id">
-                        <img class="img-fit" ng-src="{{slide.image}}">
-                        <div class="carousel-caption">
-                            <p>{{slide.text}}</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="home-btn-container">
+                <a class="home-cta" href="/events">Upcoming Events</a>
             </div>
         </div>
     </div>
-</div>
-</div>
-</div>
+ </div>
