@@ -1,4 +1,4 @@
-var app = angular.module('BarCtrls', ['BarServices']);
+var app = angular.module('BarCtrls', ['BarServices', 'ngRoute', 'ngTouch']);
 app.controller('SliderCtrl', function($scope) {
     $scope.myInterval = 3000;
     $scope.noWrapSlides = false;
@@ -20,5 +20,19 @@ app.controller('SliderCtrl', function($scope) {
         id: currIndex++
 
     }];
+
+}); 
+
+app.controller('mobileNav', function($scope) {
+    $scope.hidemenu = false;
+    var menuBtn = document.getElementById('menuBtn');
+
+    if (screen.width <= 768 ) {
+        angular.element(menuBtn).removeClass('mobile-only');
+    }
+
+    $scope.toggleMenu = function(){
+        $scope.hidemenu = !$scope.hidemenu;
+    }
 
 });

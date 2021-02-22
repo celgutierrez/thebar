@@ -62,8 +62,7 @@ a:hover {
     text-decoration: none;
     color: white;
 }
-
-.navi {
+.menu {
     background-color: rgba(0, 0, 0, .8);
     width: 100%;
     position: fixed;
@@ -76,13 +75,17 @@ a:hover {
     display: block;
 }
 
-.navi img .logo-img {
+.menu img .logo-img {
     position: absolute;
     color: #fff;
     display: inline-block;
     font-size: 2.1rem;
     padding: 0;
     white-space: nowrap;
+}
+
+#menu button.mobile-only {
+    display: none;
 }
 
 #menu > a {
@@ -186,6 +189,12 @@ a.home-cta:hover {
 
 @media only screen and (max-width: 40em) {
 
+    .mobile-menu-btn {
+        display: inline-block;
+        background: none;
+        margin-top: 0;
+    }
+
     #menu > a {
         color: #FFF;
     }
@@ -196,7 +205,6 @@ a.home-cta:hover {
 
     #menu > ul {
         height: auto;
-        display: none;
         position: absolute;
         left: 0;
         right: 0;
@@ -414,7 +422,7 @@ div.event-container {
 button {
     background-color: #184F84;
     border: 0;
-    margin-top: 3em !important;
+    margin-top: 3em;
     padding: .6em;
     color: white;
     font-weight: 600 !important;
