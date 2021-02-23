@@ -35,4 +35,5 @@ app.controller('mobileNav', function($scope) {
         $scope.hidemenu = !$scope.hidemenu;
     }
 
+
 });

@@ -1,24 +1,9 @@
 <div class="header-top home-box centered">
     <img class="img-shrink" src="./img/lambda.png">
 </div>
-<!-- <nav id="menu" class="navi" role="navigation">
-    <button ng-click="toggleMenu()" title="Show navigation"><i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-Menu</button>
-    <button href="#" title="Hide navigation"><i class="fa fa-times fa-2x" aria-hidden="true"></i>
-</button>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/events">Events</a></li>
-        <li><a href="/gallery">Gallery</a></li>
-        <li><a href="/layout">Layout</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav> -->
-
-
 <div id="menu" class="menu" ng-controller=mobileNav>
     <button id="menuBtn" ng-click="toggleMenu()" class="mobile-menu-btn mobile-only"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</button>
-    <ul class="menu-nav" ng-show="hidemenu" role="navigation">
+    <ul class="menu-nav" ng-hide="hidemenu" role="navigation">
         <li><a href="/">Home</a></li>
         <li><a href="/events">Events</a></li>
         <li><a href="/gallery">Gallery</a></li>
