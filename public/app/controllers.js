@@ -34,6 +34,4 @@ app.controller('mobileNav', function($scope) {
     $scope.toggleMenu = function(){
         $scope.hidemenu = !$scope.hidemenu;
     }
-
-
 });
