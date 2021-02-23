@@ -2,12 +2,19 @@
     <img class="img-shrink" src="./img/lambda.png">
 </div>
 <div id="menu" class="menu" ng-controller=mobileNav>
-    <button id="menuBtn" ng-click="toggleMenu()" class="mobile-menu-btn mobile-only"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</button>
-    <ul class="menu-nav" ng-hide="hidemenu" role="navigation">
-        <li><a href="/">Home</a></li>
-        <li><a href="/events">Events</a></li>
-        <li><a href="/gallery">Gallery</a></li>
-        <li><a href="/layout">Layout</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
+  <ul class="desktop-menu menu-nav" role="navigation">
+    <li><a href="/">Home</a></li>
+    <li><a href="/events">Events</a></li>
+    <li><a href="/gallery">Gallery</a></li>
+    <li><a href="/layout">Layout</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <button id="menuBtn" ng-click="toggleMenu()" class="mobile-menu-btn mobile-only"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</button>
+  <ul class="menu-nav" ng-show="hidemenu" role="navigation">
+      <li><a href="/">Home</a></li>
+      <li><a href="/events">Events</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/layout">Layout</a></li>
+      <li><a href="/contact">Contact</a></li>
+  </ul>
 </div>

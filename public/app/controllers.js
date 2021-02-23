@@ -26,9 +26,11 @@ app.controller('SliderCtrl', function($scope) {
 app.controller('mobileNav', function($scope) {
     $scope.hidemenu = false;
     var menuBtn = document.getElementById('menuBtn');
+    var nav = document.getElementsByClassName('desktop-menu');
 
     if (screen.width <= 768 ) {
         angular.element(menuBtn).removeClass('mobile-only');
+        angular.element(nav).addClass('mobile-only');
     }
 
     $scope.toggleMenu = function(){

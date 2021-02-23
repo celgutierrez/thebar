@@ -84,7 +84,7 @@ a:hover {
     white-space: nowrap;
 }
 
-#menu button.mobile-only {
+.mobile-only {
     display: none;
 }
 
