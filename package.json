@@ -18,8 +18,8 @@
   "homepage": "https://github.com/celgutierrez/thebar#readme",
   "dependencies": {
     "angular-route": "^1.8.2",
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "path": "^0.12.7"
   }
 }
